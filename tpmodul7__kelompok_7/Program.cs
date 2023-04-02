@@ -1,6 +1,5 @@
 
 ﻿// See https://aka.ms/new-console-template for more information
-
 using System;
 using System.Text.Json;
 
@@ -9,7 +8,7 @@ public class Program
      public static void Main(string[] args)
      {
         Console.WriteLine("Tugas 1 - Iqro Banyuanto");
-         DataMahasiswa1302213061 dat = new DataMahasiswa1302213061();
+        DataMahasiswa1302213061 dat = new DataMahasiswa1302213061();
         Mahasiswa run = dat.ReadJSON<Mahasiswa>("tp7_1_1302213061.json");
         Console.WriteLine("Nama "+run.nama.depan + " "+ run.nama.belakang+" dengan nim "+ run.nim+" dari fakultas "+ run.fakultas);
         Console.WriteLine("\nTugas 2 - Iqro Banyuanyo");
@@ -21,7 +20,12 @@ public class Program
         }
         
         Console.WriteLine("Tugas JSON Deserialization 1 - Alif Taufiqurrahman");
+        DataMahasiswa1302213011 dataMhs = new DataMahasiswa1302213011();
+        dataMhs.ReadJSON();
+       
+        Console.WriteLine("Tugas JSON Deserialization 2 - Alif Taufiqurrahman");
         KuliahMahasiswa1302213011 kuliah = new KuliahMahasiswa1302213011();
         kuliah.ReadJSON();
-    }
+     }
 }
+
