@@ -44,7 +44,10 @@ public class Kuliah1302210095
 {
     public List<Course1302210095> courses { get; set; }
 
-    public Kuliah1302210095() { }
+    public Kuliah1302210095()
+    {
+        this.courses = new List<Course1302210095>();
+    }
 
     public Kuliah1302210095(List<Course1302210095> courses)
     {
