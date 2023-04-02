@@ -8,7 +8,6 @@ public class Program
 {
      public static void Main(string[] args)
      {
-
         KuliahMahasiswa1302213117 regy2 = new KuliahMahasiswa1302213117();
         regy2.ReadJSON();
     }
