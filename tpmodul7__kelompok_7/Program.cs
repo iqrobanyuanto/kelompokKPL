@@ -2,12 +2,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 using System.Text.Json;
+using tpmodul7__kelompok_7;
 
 public class Program
 {
      public static void Main(string[] args)
      {
-
+        
         Console.WriteLine("Tugas JSON Deserialization 2 - Deva Angela Felisitas"+Environment.NewLine);
         KuliahMahasiswa1302213111 daftarMatkul = new KuliahMahasiswa1302213111();
         daftarMatkul.ReadJSON();
@@ -42,6 +43,10 @@ public class Program
         Console.WriteLine("Tugas JSON Deserialization 1 - Regy Renanda Rahman");
         DataMahasiswa1302213117 regy1 = new DataMahasiswa1302213117();
         regy1.ReadJSON();
+
+        Console.WriteLine("Tugas JSON Deserialization 2 - Regy Renanda Rahman");
+        KuliahMahasiswa1302213117 regy2 = new KuliahMahasiswa1302213117();
+        regy2.ReadJSON();
 
      }
 }
