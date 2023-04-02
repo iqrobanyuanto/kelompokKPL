@@ -12,7 +12,6 @@ namespace tpmodul7__kelompok_7
         public Nama nama { get; set; }
         public int nim { get; set; }
         public string fakultas { get; set; }
-
         public void ReadJSON()
         {
             string folder = "D:\\Telkom University\\Semester 4\\Konstruksi Perangkat Lunak\\Tubes Kelompok\\kelompokKPL\\tpmodul7__kelompok_7";
