@@ -5,10 +5,17 @@ public class Program
 {
      public static void Main(string[] args)
      {
+        Console.WriteLine("Tugas 1");
          DataMahasiswa1302213061 dat = new DataMahasiswa1302213061();
         Mahasiswa run = dat.ReadJSON<Mahasiswa>("tp7_1_1302213061.json");
-        Console.WriteLine(run.nama.depan + " "+ run.nama.belakang);
-        Console.WriteLine(run.nim);
-        Console.WriteLine(run.fakultas);
+        Console.WriteLine("Nama "+run.nama.depan + " "+ run.nama.belakang+" dengan nim "+ run.nim+" dari fakultas "+ run.fakultas);
+        Console.WriteLine("\nTugas 2");
+        KuliahMahasiswa13022130061 dat2 = new KuliahMahasiswa13022130061();
+        matkul run2 = dat2.ReadJSON("tp7_2_1302213061.json");
+        for(int i = 0; i < run2.courses.Count; i++)
+        {
+            Console.WriteLine("MK "+(i+1)+" "+run2.courses[i].code+" - "+ run2.courses[i].name);
+        }
+
     }
 }
