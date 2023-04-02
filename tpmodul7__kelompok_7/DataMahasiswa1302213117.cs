@@ -13,11 +13,12 @@ namespace tpmodul7__kelompok_7
         public int nim { get; set; }
         public string fakultas { get; set; }
 
-        public DataMahasiswa1302213117 ReadJSON()
+        public void ReadJSON()
         {
             string folder = "D:\\Telkom University\\Semester 4\\Konstruksi Perangkat Lunak\\Tubes Kelompok\\kelompokKPL\\tpmodul7__kelompok_7";
             string hasilBaca = File.ReadAllText(folder + "\\tp7_1_1302213117.json");
-            return JsonSerializer.Deserialize<DataMahasiswa1302213117>(hasilBaca);
+            DataMahasiswa1302213117 data = JsonSerializer.Deserialize<DataMahasiswa1302213117>(hasilBaca);
+            Console.WriteLine("Nama " + data.nama.depan + " " + data.nama.belakang + " dengan nim " + data.nim + " dari fakultas " + data.fakultas);
         }
     }
     public class Nama

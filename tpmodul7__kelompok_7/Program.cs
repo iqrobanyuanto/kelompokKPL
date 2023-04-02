@@ -8,11 +8,8 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        DataMahasiswa1302213117 mhs = new DataMahasiswa1302213117();
-        DataMahasiswa1302213117 data = mhs.ReadJSON();
-        Console.WriteLine(data.nama.depan + " " + data.nama.belakang);
-        Console.WriteLine(data.nim);
-        Console.WriteLine(data.fakultas);
+        DataMahasiswa1302213117 regy1 = new DataMahasiswa1302213117();
+        regy1.ReadJSON();
     }
 }
 
