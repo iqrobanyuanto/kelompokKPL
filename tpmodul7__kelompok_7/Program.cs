@@ -7,7 +7,7 @@ public class Program
 {
      public static void Main(string[] args)
      {
-        
+
         Console.WriteLine("Tugas 1 - Iqro Banyuanto");
         DataMahasiswa1302213061 dat = new DataMahasiswa1302213061();
         Mahasiswa run = dat.ReadJSON<Mahasiswa>("tp7_1_1302213061.json");
@@ -19,6 +19,7 @@ public class Program
         {
             Console.WriteLine("MK "+(i+1)+" "+run2.courses[i].code+" - "+ run2.courses[i].name);
         }
+
 
         Console.WriteLine("Tugas JSON Deserialization 1 - Alif Taufiqurrahman");
         DataMahasiswa1302213011 dataMhs = new DataMahasiswa1302213011();
@@ -32,6 +33,7 @@ public class Program
         Console.WriteLine("Tugas JSON Deserialization 1 - Deva Angela Felisitas");
         DataMahasiswa1302213111 dataMahasiswa = new DataMahasiswa1302213111();
         dataMahasiswa.ReadJSON();
+
 
      }
 }
