@@ -2,6 +2,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 using System.Text.Json;
+using tpmodul7__kelompok_7;
 
 public class Program
 {
@@ -12,6 +13,14 @@ public class Program
         KuliahMahasiswa1302213111 daftarMatkul = new KuliahMahasiswa1302213111();
         daftarMatkul.ReadJSON();
 
+
+        Console.WriteLine("Tugas JSON Deserialization 1 - Rahma Sakti Rahrdian");
+        DataMahasiswa1302210095 MhsRahma = new DataMahasiswa1302210095();
+        MhsRahma.ReadJSON("tp7_1_1302210095");
+
+        Console.WriteLine("Tugas JSON Deserialization 1 - Rahma Sakti Rahrdian");
+        DataMahasiswa1302210095 MatkulRahma = new DataMahasiswa1302210095();
+        MhsRahma.ReadJSON("tp7_2_1302210095");
 
         Console.WriteLine("Tugas 1 - Iqro Banyuanto");
         DataMahasiswa1302213061 dat = new DataMahasiswa1302213061();
