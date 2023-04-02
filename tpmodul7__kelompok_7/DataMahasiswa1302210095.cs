@@ -12,7 +12,7 @@ namespace tpmodul7__kelompok_7
         public void ReadJSON(string filename)
         {
             //generate file path
-            string path = "\\" + filename;
+            string path = "..\\..\\..\\" + filename;
 
             //membaca file json
             string read = File.ReadAllText(path);

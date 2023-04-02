@@ -13,19 +13,19 @@ namespace tpmodul7__kelompok_7
         public void ReadJSON(string filename)
         {
             //generate file path
-            string path = "\\" + filename;
+            string path = @"..\\..\\..\\" + filename;
 
             //membaca file json
             string read = File.ReadAllText(path);
 
             //mengubah file json yang sudah di baca menjadi object
-            Course1302210095[] objs = JsonSerializer.Deserialize<Course1302210095[]>(read);
+            Kuliah1302210095 objs = JsonSerializer.Deserialize<Kuliah1302210095>(read);
 
-            Console.WriteLine("Daftar mata kuliah yang diambil:");
+            Console.WriteLine("Daftar mata kuliah yang diambil:",objs.courses);
 
             
             int i = 1;
-            foreach (Course1302210095 obj in objs)
+            foreach (Course1302210095 obj in objs.courses)
             {
                 Console.WriteLine(
                     "MK {0:d} {1:s} - {2:s}",
