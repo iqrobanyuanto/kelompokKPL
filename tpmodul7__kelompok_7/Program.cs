@@ -39,9 +39,8 @@ public class Program
         DataMahasiswa1302213111 dataMahasiswa = new DataMahasiswa1302213111();
         dataMahasiswa.ReadJSON();
 
-        Console.WriteLine("Tugas JSON Deserialization 1 - Regy Renanda Rahman");
-        DataMahasiswa1302213117 regy1 = new DataMahasiswa1302213117();
-        regy1.ReadJSON();
+
 
      }
 }
+
