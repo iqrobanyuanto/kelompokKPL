@@ -14,7 +14,7 @@
 		},
 		{
 			"code": "CII3B4",
-			"name": "Pemrograman Berorientasi Objek"
+			"name": "Pemrograman Berbasis Objek"
 		},
 		{
 			"code": "CRJ2H3",
@@ -27,6 +27,10 @@
 		{
 			"code": "CRI2F2",
 			"name": "Proyek Tingkat II"
+		},
+		{
+			"code": "CRJ4C1",
+			"name": "Teknologi Perangkat Lunak untuk Masyarakat"
 		}
 	]
 }
